@@ -14,9 +14,19 @@ app.get('/pokemon/',(req, res)=>{
 
 })
 
-
 app.get('/pokemon/', (req, res)=>{
 })
+
+
+// Inside your server.js, add a new get route /pokemon/:id
+// That will res.send(req.params.id);
+// So, when you go to localhost:3000/pokemon/whatever
+// whatever will show up in the browser
+
+app.get('/pokemon/:id', (req, res)=>{
+	res.send(req.params.id);
+})
+
 
 
 app.listen(port, () => {
