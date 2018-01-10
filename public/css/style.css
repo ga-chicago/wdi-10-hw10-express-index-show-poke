@@ -1,4 +1,8 @@
 body {
-  color: blanchedalmond;
-  background-color: steelblue;
+    color: blanchedalmond;
+    background-color: steelblue;
+}
+
+ul {
+    list-style: none;
 }
