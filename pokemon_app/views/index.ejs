@@ -9,6 +9,20 @@
             color: blanchedalmond;
             background-color: steelblue;
             font-family: 'Joti One', cursive;
+            text-align: center;
+        }
+        ul{
+            list-style-type: none;
+            text-decoration: none;
+        }
+        a{
+            color: orange;
+            text-decoration: none;
+            font-size: 34px;
+        }
+        a:hover{
+            color: #ff6023;
+            font-size: 39px;
         }
     </style>
 </head>
@@ -18,10 +32,7 @@
     <ul class=pokemon>
         <% for(let i=0; i < pokemon.length; i++){ %>
         <li>
-            <a href="/pokemon/ <%= i %> <%=pokemon[i].name %>"></a>
-             <%=pokemon[i].name %>
-
-            <a href="/pokemon/<%= i %>">Link</a>
+            <a href="/pokemon/<%= i %> "><%=pokemon[i].name %></a>
 
         </li>
         <% } %>
