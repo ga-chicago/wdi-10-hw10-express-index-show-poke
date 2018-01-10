@@ -18,6 +18,11 @@ app.get("/pokemon", (req, res) => {
 	})
 })
 
+app.get("/pokemon/:index", (req, res) => {
+	console.log("In the show route")
+	res.send(req.params.index)
+})
+
 
 
 
