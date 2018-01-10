@@ -4,6 +4,9 @@ const port = 3000;
 
 const pokemon = require("./models/pokemon.js");
 
+app.use(express.static('public'));
+
+
 //Route to homepage
 app.get('/', (req, res) =>{
     res.send('Welcome to the Pokemon App!');
