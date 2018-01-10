@@ -12,7 +12,8 @@ app.get('/pokemon', (req,res)=>{
 });
 
 app.get("/pokemon/:id", (req, res)=>{
-  res.send(req.params.id);
+  console.log('pokemon id route being hit')
+  res.render('show.ejs', {pokemon: pokemon[req.params.id]});
 });
 
 
