@@ -1,7 +1,10 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const pokemon = require('./models/pokemon.js')
+const pokemon = require('./models/pokemon.js');
+
+//Middleware
+app.use(express.static('public'));
 
 app.get('/',(request,response)=>{
 	response.send('Welcome to the Pokemon App!');
