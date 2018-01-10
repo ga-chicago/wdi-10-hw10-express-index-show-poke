@@ -9,7 +9,10 @@ app.get('/', (req, res) =>{
 });
 
 app.get('/pokemon', (req, res) =>{
-    res.send(pokemon);
+    res.render('index.ejs', {
+        //pass entire array
+        pokemon: pokemon
+    });
 });
 
 
