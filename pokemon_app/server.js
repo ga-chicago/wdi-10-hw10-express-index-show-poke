@@ -13,6 +13,10 @@ app.get('/pokemon',(request,response)=>{
 	});
 });
 
+app.get('/pokemon/:index',(request,response)=>{
+	response.send(request.params.index);
+});
+
 app.listen(port,(request,response)=>{
 	console.log('listening at port 3000');
 });
