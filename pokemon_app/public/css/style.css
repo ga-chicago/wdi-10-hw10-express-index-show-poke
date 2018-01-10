@@ -1,8 +1,14 @@
 body {
+  width: 95vw;
+  margin: 0 auto;
   background-color: teal;
-  color: ivory;
+  color: white;
   font-family: 'Encode Sans Expanded', sans-serif;
+  text-align: center;
 }
 a {
   color: white;
+}
+ul {
+  list-style-type: none;
 }
