@@ -1,5 +1,8 @@
-body{
-	background-color: teal;
-	font-family: 'Encode Sans Expanded', sans-serif;
-	color: ivory;
+body {
+  background-color: teal;
+  color: ivory;
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+a {
+  color: white;
 }
