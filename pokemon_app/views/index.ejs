@@ -15,5 +15,15 @@
 <body>
     <h1>See All The Pokemon!</h1>
 
+    <ul class=pokemon>
+        <% for(let i=0; i < pokemon.length; i++){ %>
+        <li>
+            <a href="/pokemon/ <%= i %> <%=pokemon[i].name %>"></a>
+             <%=pokemon[i].name %> <%=pokemon[i].color %>
+
+        </li>
+        <% } %>%>
+    </ul>
+
 </body>
 </html>
