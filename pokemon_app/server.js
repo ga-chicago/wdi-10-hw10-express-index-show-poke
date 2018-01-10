@@ -14,7 +14,9 @@ app.get('/pokemon',(request,response)=>{
 });
 
 app.get('/pokemon/:index',(request,response)=>{
-	response.send(request.params.index);
+	response.render('show.ejs', {
+		pokemon: pokemon[request.params.index]
+	});
 });
 
 app.listen(port,(request,response)=>{
