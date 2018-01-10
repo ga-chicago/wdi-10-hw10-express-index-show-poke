@@ -36,7 +36,9 @@ app.get("/pokemon/", (req, res) => {
 
 //pulls data from array and places it on the webpage
 app.get("/pokemon/:id", (req, res) => {
-    res.send(req.params.id)
+    res.render("shows.ejs", {
+        pokemon: pokemon[req.params.id]
+    })
    
 //    console.log(pokemon[req.params.id])
 })
