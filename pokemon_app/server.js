@@ -8,7 +8,9 @@ app.get('/',(request,response)=>{
 });
 
 app.get('/pokemon',(request,response)=>{
-	response.send(pokemon);
+	response.render('index.ejs',{
+		pokemon: pokemon
+	});
 });
 
 app.listen(port,(request,response)=>{
