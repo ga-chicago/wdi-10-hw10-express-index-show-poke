@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const less = require('gulp-less');
+let less = require('gulp-less');
 
 gulp.task('less',()=>{ // Creats a gulp task for changing my less into css file in css folder
 	gulp.src('./less/style.less').pipe(less()).pipe(gulp.dest('./public/css/'));
