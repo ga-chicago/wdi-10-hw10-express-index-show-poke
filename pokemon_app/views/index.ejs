@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="show.ejs">
 	<title></title>
 </head>
 <body>
 	<h1> 'See All The Pokemon!'</h1>
+
+<ul>
+    <% for( i=0; i<pokemon.length; i++) { %>
+        <li>
+            <a href='/pokemon/<%=[i]%>'>
+                <%=pokemon[i].name %>
+            </a>
+        </li>
+    <% } %>
+</ul>
 
 
 		<style type="text/css">
@@ -13,7 +24,7 @@
 		  background-color: steelblue;
 		}
 		</style>
-	
+
 
 </body>
 </html>

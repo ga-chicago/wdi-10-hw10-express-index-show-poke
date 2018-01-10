@@ -1,21 +1,23 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const pokemon = require('./models/pokemon.js');
+const pokemons = require('./models/pokemon.js');
 
 
 // include a get route / that will res.send('Welcome to the Pokemon App!'); 
 // So that when you got to localhost:3000, you will see Welcome to the Pokemon App!
+// app.get('/pokemon/', (req, res)=>{
+// 		res.send(pokemon)
+// });
 
-app.get('/pokemon/',(req, res)=>{
-	// res.send('Welcome to the Pokemon App!')
-	res.render('index.ejs');
-	res.send(pokemon)
-
-})
 
 app.get('/pokemon/', (req, res)=>{
-})
+
+  	res.render('index.ejs', {
+    pokemon: pokemons
+	})
+
+});
 
 
 // Inside your server.js, add a new get route /pokemon/:id
@@ -25,6 +27,7 @@ app.get('/pokemon/', (req, res)=>{
 
 app.get('/pokemon/:id', (req, res)=>{
 	res.send(req.params.id);
+
 })
 
 
