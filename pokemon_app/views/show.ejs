@@ -1,14 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
     <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            color: blanchedalmond;
+            background-color: steelblue;
+            font-family: 'Joti One', cursive;
+        }
+    </style>
 </head>
-
 <body>
-<h1>Pokemon Show page</h1>
-   <%=pokemon.name; %> <%=pokemon.img; %>
+<h1>Gotta Catch 'Em All</h1>
 
+<h1><%=pokemon.name %></h1>
+
+<img src="<%=pokemon.img %>">
+<br>
+
+
+<a href="index.ejs">Back</a>
 
 </body>
 </html>
