@@ -26,8 +26,10 @@ app.get('/pokemon/', (req, res)=>{
 // whatever will show up in the browser
 
 app.get('/pokemon/:id', (req, res)=>{
-	res.send(req.params.id);
 
+  	res.render('show.ejs', {
+    pokemon: pokemons[req.params.id]
+	})
 })
 
 
