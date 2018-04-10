@@ -8,7 +8,9 @@ app.get('/', (reg,res) => {
 })
 
 app.get('/pokemon', (req,res) => {
-	res.send(pokemon)
+	res.render('index.ejs', {
+		pokemonList: pokemon
+	})
 })
 
 
