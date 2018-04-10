@@ -9,6 +9,7 @@ app.get('/', (req, res) => {
 	res.send('Welcome to the Pokemon App!')
 })
 
+app.use(express.static('public'))
 
 app.get('/pokemon', (req, res) => {
 	res.render('index.ejs', {
