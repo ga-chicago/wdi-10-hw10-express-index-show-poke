@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/marietrull/wdi-11-hw15-express-index-show-poke/issues"
   },
-  "homepage": "https://github.com/marietrull/wdi-11-hw15-express-index-show-poke#readme"
+  "homepage": "https://github.com/marietrull/wdi-11-hw15-express-index-show-poke#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
