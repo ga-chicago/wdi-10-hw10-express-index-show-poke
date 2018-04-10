@@ -10,8 +10,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/pokemon', (req, res) => {
-	console.log(pokemon)
-	res.send(pokemon)
+	res.render('index.ejs')
 })
 
 app.listen(port, () => {
