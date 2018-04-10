@@ -1,0 +1,20 @@
+{
+  "name": "wdi-11-hw15-express-index-show-poke",
+  "version": "1.0.0",
+  "description": "![ga](http://mobbook.generalassemb.ly/ga_cog.png)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marietrull/wdi-11-hw15-express-index-show-poke.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marietrull/wdi-11-hw15-express-index-show-poke/issues"
+  },
+  "homepage": "https://github.com/marietrull/wdi-11-hw15-express-index-show-poke#readme"
+}
