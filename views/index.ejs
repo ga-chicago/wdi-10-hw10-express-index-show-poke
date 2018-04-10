@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
+</head>
+<body>
+	<h1>See All The Pokemon!</h1>
+		<style type="text/css">
+		body { 
+			color: blanchedalmond;
+  			background-color: steelblue; 
+  			/*font-family: 'Montserrat', sans-serif;*/
+  		}
+	</style>
+	<ul>
+		<% for(let i = 0; i < pokemon.length; i++) {%>
+		<li>
+		<a href="/pokemon/ <%= i %>"> <%=pokemon[i].name%></a>
+		</li>
+		<% } %>
+	</ul>
+
+
+</body>
+</html>
