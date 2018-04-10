@@ -13,12 +13,17 @@
 		* {
 			font-family: 'Do Hyeon', sans-serif;
 		}
+		a {
+			color: yellow;
+		}
 	</style>
 	<h1>See All The Pokemon!</h1>
 	<ul>
 		<% for (let i = 0; i < pokemon.length; i++) { %>
 			<li>
-				<%= pokemon[i].name %>
+				<a href=<%= "/pokemon/" + i %>>
+					<%= pokemon[i].name %>
+				</a>
 			</li>
 		<% } %>
 	</ul>
