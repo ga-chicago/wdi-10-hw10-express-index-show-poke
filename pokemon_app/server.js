@@ -14,19 +14,18 @@ app.get('/pokemon', (req,res) => {
 })
 
 app.get('/pokemon/:id', (req, res) => {
-	res.send(req.params.id)
+	res.render('show.ejs', {
+		pokemon: pokemon[req.params.id]
+	})
 })
 
 
-// Set up your show route
-// Inside your server.js, add a new get route /pokemon/:id
-// That will res.send(req.params.id);
-// So, when you go to localhost:3000/pokemon/whatever
-// whatever will show up in the browser
+// add an h2 tag that will display the name of the pokemon
+// add an image tag that will display an image of the pokemon
+// add an anchor tag with the text of back, that will take you back to your index.ejs view
+// update the route in the server.js to render the show view with the pokemon data
 // 🔴 The commit message should read: 
-// "Commit 7 - show view shows req.params.id "
-
-
+// "Commit 9 - created show views of each pokemon "
 
 
 
