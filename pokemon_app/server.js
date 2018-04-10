@@ -6,16 +6,18 @@ const PORT = 3000;
 
 const pokemon = require('./models/pokemon.js')
 
+app.use(express.static('public'))
+
+
 app.get('/', (req, res) => {
 	res.send("Welcome to the Pokemon App!");
 });
 
 // **index route**
 app.get('/pokemon', (req, res) => {
-	res.send(pokemon);
-	// res.render('index.ejs', {
-	// 	thePokemon: pokemon
-	// });
+	res.render('index.ejs', {
+		thePokemon: pokemon
+	});
 });
 
 app.listen(PORT, () => {
