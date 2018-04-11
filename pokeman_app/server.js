@@ -1,9 +1,11 @@
 const express = require('express');
 const app = express();
-
-const pokemon = require('./models/pokemon.js')
-
 const PORT = 3000;
+
+const pokemon = require('./models/pokemon.js');
+
+app.use(express.static('public'));
+
 
 app.get('/', (req, res) => {
   res.send("Welcome to the Pokemon App!")
@@ -15,17 +17,11 @@ app.get('/pokemon', (req, res) => {
   })
 });
 
-
-
 //SHOW route
 app.get('/pokemon/:id', (req, res) => {
   res.render('show.ejs', {
     pokemon: pokemon[req.params.id]
   })
-  thePokemon = {
-    name: req.body.name
-
-  }
 });
 
 
