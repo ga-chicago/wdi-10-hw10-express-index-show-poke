@@ -1,0 +1,12 @@
+body {
+	background-color: blue;
+	color: yellow;
+}
+
+* {
+	font-family: 'Do Hyeon', sans-serif;
+}
+
+a {
+	color: yellow;
+}
