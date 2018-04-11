@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.5.8",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "gulp": "^3.9.1",
+    "gulp-less": "^4.0.0"
   }
 }
