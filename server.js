@@ -10,7 +10,9 @@ app.get('/welcome', (req, res) => {
 });
 
 app.get('/pokemon', (req, res) => {
-	res.send(pokemon);
+	res.render('index.ejs', {
+		pokemon: pokemon
+	})
 });
 
 app.listen(3000, () => {

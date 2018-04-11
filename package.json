@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/marietrull/wdi-11-hw15-express-index-show-poke#readme",
   "dependencies": {
+    "ejs": "^2.5.8",
     "express": "^4.16.3"
   }
 }
