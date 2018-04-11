@@ -4,6 +4,12 @@ const app = express();
 const PORT = 3000;
 const pokemon = require('./models/pokemon.js')
 
+// middleware
+
+app.use(express.static('public'))
+
+// Routes 
+
 app.listen(3000, () => {
 	console.log('listening on port 3000');
 })
