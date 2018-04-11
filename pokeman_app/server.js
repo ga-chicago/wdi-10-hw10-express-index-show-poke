@@ -22,6 +22,10 @@ app.get('/pokemon/:id', (req, res) => {
   res.render('show.ejs', {
     pokemon: pokemon[req.params.id]
   })
+  thePokemon = {
+    name: req.body.name
+
+  }
 });
 
 
