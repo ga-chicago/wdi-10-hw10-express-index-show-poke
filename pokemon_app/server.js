@@ -20,6 +20,11 @@ app.get('/pokemon', (req, res) => {
 	});
 });
 
+// **show route**
+app.get('/pokemon/:id', (req, res) => {
+	res.send(req.params.id);
+})
+
 app.listen(PORT, () => {
 	console.log("server listening on port 3000");
 });
