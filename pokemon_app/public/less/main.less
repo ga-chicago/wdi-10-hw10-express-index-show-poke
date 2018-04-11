@@ -1,13 +1,39 @@
+//Define the pokemon colors 
+//in case I want to update them later 
+//so that they match the official colors
+
+@yellow: yellow;
+@blue: blue;
+@red: red;
+@white: white;
+
 body {
-	background-color: blue;
-	color: yellow;
+	background-color: @blue;
+	color: @yellow;
 	box-sizing: border-box;
 }
 
 * {
 	font-family: 'Do Hyeon', sans-serif;
+	text-align: center;
 }
 
 a {
-	color: yellow;
+	color: @yellow;
+	font-size: 24px;
+}
+
+ul {
+	list-style-type: none;
+	
+}
+
+h2 {
+	color: @red;
+}
+
+p {
+	a {
+		color: @white;
+	}
 }
