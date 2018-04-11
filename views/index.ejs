@@ -5,6 +5,16 @@
 </head>
 <body>
 	<h1>See All The Pokemon!</h1>
+	<ul>
+	<%for(let i = 0, len = thePokemon.length; i < len; i ++) {%>
+
+		<li><a href=""><%=thePokemon[i].name%></a></li>
+
+	<%}%>
+
+	</ul>		
+
+
 
 </body>
 </html>
