@@ -1,3 +1,19 @@
-body {
-  color: #ccc;
+h1 {
+  color: #f4a142;
+  align: center;
+}
+li {
+  font-size: 20px;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #de5fe8;
+}
+h2 {
+  color: #62b24e;
+}
+#back {
+  color: #de5fe8;
+  font-size: 20px;
 }
