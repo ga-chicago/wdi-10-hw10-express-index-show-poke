@@ -2,21 +2,17 @@
 <html>
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<title></title>
-	<style type="text/css">
-		body {
-		  color: blanchedalmond;
-		  background-color: steelblue;
-		  font-family: 'Do Hyeon', sans-serif;
-		}
-	</style>
+	
 </head>
 <body>
-
+	
 	<h1>See all the Pokemon!</h1>
 
 	<ul><% for (let i = 0; i < pokemon.length; i++ ) {%>
 		<a href="/pokemon/<%=i%>"><li><%= pokemon[i].name%></li></a>
 	<%}%></ul>
+	
 </body>
 </html>

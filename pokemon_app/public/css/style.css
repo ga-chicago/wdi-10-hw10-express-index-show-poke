@@ -1,3 +1,15 @@
 body {
-	background-color: orange;
+  color: blanchedalmond;
+  background-color: steelblue;
+  font-family: 'Do Hyeon', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+body h1 {
+  color: yellow;
+}
+body li {
+  font-size: 20px;
+  color: blanchedalmond;
 }

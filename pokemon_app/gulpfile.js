@@ -20,9 +20,9 @@ gulp.task('less', () => {
 	// find the file we want to convert
 	// then we need to convert it
 	// then we need to send it to where we want 
-	gulp.src('./less/style.less')
+	gulp.src('./public/less/style.less')
 		.pipe(less())
-		.pipe(gulp.dest('./css/'))
+		.pipe(gulp.dest('./public/css/'))
 
 })
 
