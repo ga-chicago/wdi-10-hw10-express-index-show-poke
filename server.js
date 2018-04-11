@@ -3,14 +3,20 @@ const app = express();
 
 const Port = 3000;
 
+
+
 app.get('/', (req, res) => {
 	res.send('Welcome to the Pokemon App!');
 })
 
+
 const pokemon = require('./models/pokemon.js')
-
-
-
+//Middleware
+app.use((req, res, next) => {
+	// console.log("I am middleware and will run for the routes")
+	next();
+})
+app.use(express.static('public'))
 
 app.get('/pokemon', (req, res) => {
 	
@@ -26,6 +32,7 @@ app.get('/pokemon/:id', (req, res) => {
 	});
 	
 })
+
 
 
 
