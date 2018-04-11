@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
 	<title>Show the Pokemon</title>
+	<style type="text/css">
+		body {
+		  color: blanchedalmond;
+		  background-color: steelblue;
+		  font-family: 'Do Hyeon', sans-serif;
+		}
+	</style>
 </head>
 <body>
 
-	<h1>The Pokemon</h1>
+	<h1>Gotta Catch 'Em All</h1>
 
-	<%= id%>
+	<h2><%=pokemon.name%></h2>
+
+	<img src="<%=pokemon.img%>"> <br/> <br/>
+
+	<a href="/pokemon">Back</a>
 
 </body>
 </html>
