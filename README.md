@@ -1,7 +1,5 @@
 ![ga](http://mobbook.generalassemb.ly/ga_cog.png)
 
-# wdi-11-chi _curious-turtles_
-
 ![Kira and Myles in the 60s](https://i.pinimg.com/736x/1a/2b/b7/1a2bb7a785522eed1a6d597174fc3bfb--star-trek-images-starship-enterprise.jpg)
 
 ---
