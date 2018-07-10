@@ -1,17 +1,3 @@
-![ga](http://mobbook.generalassemb.ly/ga_cog.png)
-
-![Kira and Myles in the 60s](https://i.pinimg.com/736x/1a/2b/b7/1a2bb7a785522eed1a6d597174fc3bfb--star-trek-images-starship-enterprise.jpg)
-
----
-
-Original creators: WDI-Lettuce, WDIR-Panthalassa, Thom Page<br>
-Adapted by: Kristyn Bryan<br>
-Further Adaptations by: Karolin Rafalski and Reuben Ayres<br>
-Competencies: Practicing Index and Show pages<br>
-Prerequisites: Javascript, Express, Routes, Node <br>
-
----
-
 # POKE EXPRESS
 
 ![eh](http://digitalspyuk.cdnds.net/16/08/980x490/landscape-1456483171-pokemon2.jpg)
@@ -140,7 +126,7 @@ body {
 </style>
 ```
 
-  
+  **OR** : Maybe look up how to add static assets! (which is css, or clientside js)
   
   - **Stretch step, not required** : Choose a google font and add it to your html and inside your `<style>` tag
   - Change your `/pokemon` route to `res.render` your `index.ejs` file
@@ -209,48 +195,20 @@ body {
   "Commit 10 - set up serving of static files so we can add CSS"
 <hr>
 
-### Style your app, step 2: gulp
-
- - Set up gulp to compile LESS (like in class) and have it spit out the CSS file to your static files area you just set up.
-
- - Pro tip: you might like to open third terminal tab where you keep gulp running (one for nodemon, one for gulp, and one for regular terminal stuff like making files and doing git adds/commits/pushes)
+### Style your app, 
 
 <hr>
 &#x1F534; The commit message should read: <br>
-  "Commit 11 - added gulp and configured it to compile LESS"
+  "Commit 11 - The app is styled"
 <hr>
 
-### Style your app, step 3: write the less
-
- - Update the appearance of your app with css. 
- - <details><summary> Example of how pretty it can be</summary>
- 
-    Index page:
-    ![index](https://i.imgur.com/5Q5maB7.png)
-
-    Show page:
-    ![show](https://i.imgur.com/USD5KN1.png)
-
- </details>
 
 
- <hr>
-   &#x1F534; The commit message should read: <br>
-   "Commit 12 - Styled app with LESS"
- <hr>
-
-
-
-
-
-
-
-
-## You finished!  Nice work. Submit by making a pull request. 
+## You finished!  Nice work. Submit your homework
 
 ## Hungry for more?
 
-1. Style your application with flexbox, or if you really need a good rabbit hole--check out [Bootstrap!](https://getbootstrap.com/docs/4.1/getting-started/introduction/), a CSS library created by Twitter to make using the [960px grid system](https://960.gs/demo.html) a little easier. Or there's a substantially more lightweight 960px-grid-system-based answer to Bootstrap called [Skeleton](http://getskeleton.com/). You could also jazz up your app by adding some hand-rolled flourishes with CSS animations, and/or some sweet jQuery and/or ....??? u pick???.....!
+1. Style your application with flexbox, or [Bootstrap!](https://getbootstrap.com/docs/4.1/getting-started/introduction/), a CSS library created by Twitter to make using the [960px grid system](https://960.gs/demo.html) a little easier. Or there's a substantially more lightweight 960px-grid-system-based answer to Bootstrap called [Skeleton](http://getskeleton.com/). You could also jazz up your app by adding some hand-rolled flourishes with CSS animations, and/or some sweet jQuery and/or ....??? u pick???.....!
 
 2. Learn more about Pseudo Selectors to become a CSS Genius
     - [pseudo selector links](https://www.youtube.com/watch?v=YMZGPqNDn_s&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=17) ~ 5 minutes
