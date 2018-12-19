@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+	<h1>See all the Pokemon!</h1>
+	<ul>
+		<% for (let i=0; i < pokemon.length; i++) { %>
+			<li><a href="/pokemon/<%= i %>"><%= pokemon[i].name %></a></li>	
+		<% } %>
+	</ul>
+</body>
+</html>
