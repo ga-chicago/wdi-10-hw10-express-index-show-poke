@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokemon</title>
+</head>
+<body>
+  <style type="text/css">body{
+  background-color:steelblue;
+  color:blanchedalmond;</style>
+
+    <h1>This is a list of our pokemon</h1>
+
+  <ul class="pokemon">
+    <% for(let i=0;i < pokemon.length;i++){ %>
+      <li>
+        <%= pokemon[i].name %>
+        <a href="<%= pokemon[i].img%>"><%= pokemon[i].name %></a>
+        <a href="/pokemon/<%= i %>">pokedex</a>
+      <% } %>
+      </li>
+  </ul>
+
+
+</body>
+</html>
