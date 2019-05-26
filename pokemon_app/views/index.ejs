@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <h1>See All The Pokemon!</h1>
+
+    <ul class=pokemon>
+        <% for(let i=0; i < pokemon.length; i++){ %>
+        <li>
+            <a href="/pokemon/<%= i %> "><%=pokemon[i].name %></a>
+
+        </li>
+        <% } %>
+    </ul>
+
+</body>
+</html>
