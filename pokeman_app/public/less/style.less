@@ -1,0 +1,46 @@
+@nice-blue: rgb(104, 129, 218);
+@poke-yellow: rgb(245, 211, 108);
+@headerOne: 'Chango', cursive;
+@headerTwo: 'Do Hyeon', sans-serif;
+@textFont: 'VT323', monospace;
+
+
+body {
+    color: @poke-yellow;
+    background-color: @nice-blue;
+}
+
+ h1 {
+   font-family: @headerOne;
+   display: flex;
+   justify-content: center;
+
+ }
+
+h2{
+  font-family: @headerTwo;
+  display: flex;
+  justify-content: center;
+
+}
+
+ul, a {
+  color: @poke-yellow;
+  font-size: 1.5em;
+  font-family: @textFont;
+  text-decoration: none;
+  &:hover {
+    color: rgb(97, 172, 180);
+  }
+}
+
+img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 284px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
