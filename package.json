@@ -1,0 +1,23 @@
+{
+  "name": "wdi-11-hw15-express-index-show-poke",
+  "version": "1.0.0",
+  "description": "![ga](http://mobbook.generalassemb.ly/ga_cog.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amjad-H-Ali/wdi-11-hw15-express-index-show-poke.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amjad-H-Ali/wdi-11-hw15-express-index-show-poke/issues"
+  },
+  "homepage": "https://github.com/Amjad-H-Ali/wdi-11-hw15-express-index-show-poke#readme",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3"
+  }
+}
