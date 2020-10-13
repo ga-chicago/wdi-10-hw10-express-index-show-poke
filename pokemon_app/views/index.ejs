@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>POKEMON INDEX</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	
+</head>
+<body>
+
+	<h1>See All The Pokemon!</h1> <ul>
+	<% for (let i = 0; i < thePokemon.length; i++) {%>
+		<li>
+			<a href="/pokemon/<%= i %>"> <%=thePokemon[i].name%> </a>
+		</li>
+	<%}%>
+	</ul>
+	
+</body>
+</html>
